@@ -4,24 +4,21 @@
 
 void troca(int v[], int a, int b) {
   
-  int temp = v[a];
-  v[a] = v[b];
-  v[b] = temp;
+    int temp = v[a];
+    v[a] = v[b];
+    v[b] = temp;
   
 }
 
 int* inverteVetor(int v[], int n){
 
-  int i = 0, j = n-1;
-  int *aux = (int *)malloc(n * sizeof(int));
-  for (i = 0; i < n; i++) {
-
-    aux[j] = aux[i];
-    j--;
-
-  }
-
-  return aux;
+    int i = 0, j = n-1;
+    int *aux = (int *)malloc(n * sizeof(int));
+      for (i = 0; i < n; i++) {
+      aux[j] = aux[i];
+          j--;
+      }
+    return aux;
   
 }
 
